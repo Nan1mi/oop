@@ -1,0 +1,75 @@
+  LAB10.MyForm.resources - Embedded, ContainedInManifestFile, 
+  LAB10.MyForm1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly LAB10, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class LAB10.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String TargetFilePath : Public
+Class LAB10.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class LAB10.HtmlElement: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 X : Public
+    Int32 Y : Public
+    Int32 Width : Public
+    Int32 Height : Public
+  Methods:
+    GenerateHtml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ParseFromHtml(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class LAB10.HtmlText: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LAB10.HtmlElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Text : Public
+    System.String FontName : Public
+    Int32 FontSize : Public
+    System.String HexColor : Public
+  Methods:
+    GenerateHtml(): PrivateScope, Public, Virtual, HideBySig
+    ParseFromHtml(String): PrivateScope, Public, Virtual, HideBySig
+Class LAB10.HtmlTable: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LAB10.HtmlElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 Rows : Public
+    Int32 Cols : Public
+    Int32 Border : Public
+    System.String BorderColor : Public
+  Methods:
+    GenerateHtml(): PrivateScope, Public, Virtual, HideBySig
+    ParseFromHtml(String): PrivateScope, Public, Virtual, HideBySig
+Class LAB10.HtmlImage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LAB10.HtmlElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Src : Public
+  Methods:
+    GenerateHtml(): PrivateScope, Public, Virtual, HideBySig
+    ParseFromHtml(String): PrivateScope, Public, Virtual, HideBySig
+Class LAB10.HtmlLink: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :LAB10.HtmlElement
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String Text : Public
+    System.String Href : Public
+    System.String HexColor : Public
+  Methods:
+    GenerateHtml(): PrivateScope, Public, Virtual, HideBySig
+    ParseFromHtml(String): PrivateScope, Public, Virtual, HideBySig

@@ -1,0 +1,4 @@
+C:\Users\malyt\source\repos\LAB10\LAB10\x64\Debug\LAB10.vcxproj.AssemblyReference.cache
+C:\Users\malyt\source\repos\LAB10\LAB10\x64\Debug\LAB10.MyForm1.resources
+C:\Users\malyt\source\repos\LAB10\LAB10\x64\Debug\LAB10.vcxproj.GenerateResource.cache
+C:\Users\malyt\source\repos\LAB10\LAB10\x64\Debug\LAB10.MyForm.resources
